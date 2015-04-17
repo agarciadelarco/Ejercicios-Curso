@@ -1,0 +1,29 @@
+<h3>
+  <strong>Brand:</strong>
+  <%= @laptop.brand %>
+</h3>
+
+<p>
+  <strong>Model:</strong>
+  <%= @laptop.model %>
+</p>
+
+<p>
+  <strong>Processor brand:</strong>
+  <%= @laptop.processor %>
+</p>
+
+<p>
+  <strong>RAM Size (in GB):</strong>
+  <%= @laptop.ram %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @laptop.price %>
+</p>
+
+<p>
+    <%= link_to 'Edit', edit_laptop_path(@laptop)%> |
+    <%= link_to 'Back', laptops_path%>
+</p>

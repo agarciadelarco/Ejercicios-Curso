@@ -1,0 +1,14 @@
+<h1>Editing price</h1>
+
+<%= form_for :laptop, url: laptop_path(@laptop), method: :patch do |f| %>
+  <p>
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', laptops_path%>
