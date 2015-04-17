@@ -28,8 +28,8 @@ class BackpacksController < ApplicationController
 	end
 
 	def destroy
-  		@article = Article.find(params[:id])
-  		@article.destroy
+  		@backpack = Backpack.find(params[:id])
+  		@backpack.destroy
   		redirect_to backpacks_path
 	end
 
