@@ -3,7 +3,7 @@
 	<div><%= laptop.brand %>
 		<%= link_to 'Show', laptop_path(laptop)%>
 		<%= link_to 'Edit', edit_laptop_path(laptop) %>
-		<%= button_to 'Destroy', laptop_path(laptop), method: :delete, data: { confirm: 'Are you sure?' } %></div>
+		<%= link_to 'Destroy', laptop_path(laptop), method: :delete, data: { confirm: 'Are you sure?' } %></div>
 <% end %>
 
 <p>
@@ -11,5 +11,5 @@
 </p>
 
 <p>
-	<%= link_to 'Backpacks!', backpacks_path %>
+	<%= link_to 'Main page', root_path %>
 </p>
