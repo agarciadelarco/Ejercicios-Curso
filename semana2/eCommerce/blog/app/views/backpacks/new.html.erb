@@ -1,0 +1,29 @@
+<%= form_for @backpack do |f| %>
+  <p>
+    <%= f.label :color %><br>
+    <%= f.text_field :color %>
+  </p>
+
+  <p>
+    <%= f.label :capacity %><br>
+    <%= f.text_field :capacity %>
+  </p>
+
+  <p>
+    <%= f.label :pockets %><br>
+    <%= f.text_field :pockets %>
+  </p>
+
+  <p>
+    <%= f.label :waterproof %><br>
+    <%= f.text_field :waterproof %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<p>
+  <%= link_to 'Back', backpacks_path %>
+</p>

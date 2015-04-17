@@ -2,11 +2,14 @@
 <% @laptops.each do |laptop|%>
 	<div><%= laptop.brand %>
 		<%= link_to 'Show', laptop_path(laptop)%>
-		<%= link_to 'Edit', edit_laptop_path(laptop) %></div>
-		
-
+		<%= link_to 'Edit', edit_laptop_path(laptop) %>
+		<%= button_to 'Destroy', laptop_path(laptop), method: :delete, data: { confirm: 'Are you sure?' } %></div>
 <% end %>
 
 <p>
     <%= link_to 'New laptop', new_laptop_path %>
+</p>
+
+<p>
+	<%= link_to 'Backpacks!', backpacks_path %>
 </p>
