@@ -168,9 +168,9 @@ switch ( number ) {
 var numbers = [1,2,3,4,5,6,7,8,9,10];
 var result = [];
 
-for( var i = 1; i < numbers.length; i++){
+for( var i = 0; i < numbers.length; i++){
 
-	result.push( numbers[i++] );
+	result.push( numbers[++i] );
 
 }
 
